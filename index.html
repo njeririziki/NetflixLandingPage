@@ -5,61 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+     <script>
+           let ingerients ;
+           const appetizer ='fruit';
+
+        function showDate(){
+              
+             
+             document.getElementById('dateShower').innerText= ingerients +"" + appetizer;
+           console.log('Hello World');
+            console.log(new Date())
+            const location = window.location.pathname;
+           
+            localStorage.setItem('firstItem','orange')
+           
+        }
+        function listIngredients(){
+           
+            let x= {};
+            let y= 4;
+
+         
+            // console.log(typeof y);
+           
+            console.log(x);
+            document.getElementById('cooking').innerText= x*y;
+        }
+     </script>
 </head>
 <body>
-    <div class="container">
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-       <div class="snowFlake"></div>
-
-    </div>
-
-    <div class="relativeContainer">
-      <div class="relativeItems">
-          <p>Relative</p>
-      </div>
-      <div class="relativeItems">
-        <p>Relative</p>
-    </div>
-    </div>
-    <div class="absoluteContainer">
-        <div class="absoluteItems">
-            <p>absolute</p>
-        </div>
-        <div class="absoluteItem1">
-            <p>absolute</p>
-        </div>
-      </div>
-      <div class="fixedContainer">
-        <div class="fixedItems">
-            <p>fixed</p>
-        </div>
-        <div class="fixedItem1">
-            <p>fixed</p>
-        </div>
-      </div>
+  <!-- <button
+  
+  onclick="showDate()"
+  >
+  Show The date
+  </button> -->
+  <button onclick="listIngredients()">
+    Cook
+  </button>
+  <p id="dateShower">Date</p>
+   <h4 id="cooking">Cooking</h4>
 </body>
 </html>
