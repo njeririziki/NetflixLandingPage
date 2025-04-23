@@ -1,49 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-     <script>
-           let ingerients ;
-           const appetizer ='fruit';
-
-        function showDate(){
-              
-             
-             document.getElementById('dateShower').innerText= ingerients +"" + appetizer;
-           console.log('Hello World');
-            console.log(new Date())
-            const location = window.location.pathname;
-           
-            localStorage.setItem('firstItem','orange')
-           
-        }
-        function listIngredients(){
-           
-            let x= {};
-            let y= 4;
-
-         
-            // console.log(typeof y);
-           
-            console.log(x);
-            document.getElementById('cooking').innerText= x*y;
-        }
-     </script>
-</head>
-<body>
-  <!-- <button
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div  class="wholeContainer">
+    <div  class="carouselContainer">
+      <img src="./assets/bird-8799413_1280.jpg " alt="bird" class="carouselImage" />
+      <img src="./assets/cat-7755458_1280.jpg " alt="cat" class="carouselImage" />
+      <img src="./assets/elephants-9367271_1280.jpg " alt="elephant" class="carouselImage" />
+    </div>
+     
+        <button class="carouselButton" id="prevButton">Previous</button>
+        <button class="carouselButton" id="nextButton">Next</button>
+     
   
-  onclick="showDate()"
-  >
-  Show The date
-  </button> -->
-  <button onclick="listIngredients()">
-    Cook
-  </button>
-  <p id="dateShower">Date</p>
-   <h4 id="cooking">Cooking</h4>
-</body>
+  </div>
+  </body>
+  
+  </body>
 </html>
